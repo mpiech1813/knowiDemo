@@ -1,10 +1,16 @@
-const app = require('./server')
+const app = require('./server');
 
-const PORT = process.env.PORT || 1813
+const PORT = process.env.PORT || 1813;
 
-const init  = ( ) => {
+const syncAndSeed = () => {
+  try {
+  } catch (error) {
+    console.log('error occurred in sync and seed');
+  }
+};
 
-  app.listen(PORT, ()=> console.log(`Listening on port ${PORT}`))
-}
+const init = () => {
+  app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+};
 
-init()
+init();
