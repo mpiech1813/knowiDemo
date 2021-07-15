@@ -3,7 +3,7 @@ const User = require('../db/model/users');
 
 localDataRouter.get('/', async (req, res, next) => {
   try {
-    const data = await User.findAll();
+    // const data = await User.findAll();
 
     res.send(data);
   } catch (error) {

@@ -12,4 +12,4 @@ dataRouter.get('/', async (req, res, next) => {
   }
 });
 
-module.exports = data;
+module.exports = dataRouter;
