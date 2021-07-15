@@ -5,16 +5,18 @@ const User = db.define('user', {
   firstName: {
     type: DataTypes.STRING,
     allowNull: false,
-    unique: true,
   },
   lastName: {
     type: DataTypes.STRING,
     allowNull: false,
-    unique: true,
   },
   grade: {
     type: DataTypes.INTEGER,
-    allowNull: flase,
+    allowNull: false,
+  },
+  daysAttended: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
   },
 });
 
